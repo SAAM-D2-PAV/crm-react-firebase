@@ -1,0 +1,23 @@
+[
+    {
+        "prenom":"Mathieu",
+        "nom":"Le Ray",
+        "email":"mathieu.le-ray@education.gouv.fr",
+        "direction":"SAAM",
+        "notes":"voici une notes"
+    },
+    {
+        "prenom":"John",
+        "nom":"Doe",
+        "email":"john.doe@education.gouv.fr",
+        "direction":"DNE",
+        "notes":"voici une notes"
+    },
+    {
+        "prenom":"Jane",
+        "nom":"Doe",
+        "email":"jane.doe@education.gouv.fr",
+        "direction":"DGSIP",
+        "notes":"voici une notes"
+    }
+]
