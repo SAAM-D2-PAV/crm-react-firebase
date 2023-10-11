@@ -9,6 +9,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.updateData = this.updateData.bind(this);
+    this.deleteData = this.deleteData.bind(this);
     this.state = {
       contacts:[]
     }
@@ -20,6 +21,11 @@ class App extends Component {
     this.setState({
       contacts: contactsFinal
     })
+  }
+
+  async deleteData(docId) {
+    await deleteDoc(doc(db, "contacts", docId))
+
   }
 
   componentDidMount() {
@@ -38,7 +44,7 @@ class App extends Component {
         </div>
         <div>
             <Form />
-            <Grid items={this.state.contacts} />
+            <Grid items={this.state.contacts} deleteData={this.deleteData}/>
         </div>
         
 
